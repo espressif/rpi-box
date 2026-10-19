@@ -3,9 +3,9 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      # docs/pdu/schematic.qet is about 672 KiB
+      # docs/pdu/schematic.qet is about 672 KiB; docs/shared/images/box-racked-3.jpeg is about 786 KiB
       - id: check-added-large-files
-        args: ["--maxkb=700"]
+        args: ["--maxkb=850"]
       - id: fix-byte-order-marker
       - id: check-case-conflict
       - id: end-of-file-fixer
